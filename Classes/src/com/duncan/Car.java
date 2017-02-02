@@ -1,0 +1,26 @@
+package com.duncan;
+
+/**
+ * Created by duncan.macleod on 5/5/16.
+ */
+public class Car {
+
+    private int doors;
+    private int wheels;
+    private String model;
+    private String engine;
+    private String color;
+
+    public void setModel(String model) {
+        String validModel = model.toLowerCase();
+        if (validModel.equals("carrera") || validModel.equals("commodore")) {
+            this.model = model;
+        } else {
+            this.model = "Unkown";
+        }
+    }
+
+    public String getModel() {
+        return this.model;
+    }
+}
